@@ -24,7 +24,8 @@ public class ArrayWithSpecialMethods {
 		//Choosing option
 		System.out.println("Choose option which you want to do with the array? \n"
 				+ "1. Sort the array \n"
-				+ "2. Calculate the average of this array");
+				+ "2. Calculate the average of this array \n"
+				+ "3. Calculate the sum of this array.");
 		int choose = keyboard.nextInt();
 		if (choose == 1) {
 			SortingArray sort = new SortingArray();
@@ -36,6 +37,13 @@ public class ArrayWithSpecialMethods {
 			AverageArray arr2 = new AverageArray();
 			int res = arr2.averageArray(arr);
 			System.out.println("Average of this array is: " + res);
+		}
+		else if (choose == 3) {
+			int sum = 0;
+			for (int i =0; i < LENGTH; i++) {
+				sum +=arr[i];
+			}
+			System.out.println("The sum is: " + sum);
 		}
 		else {
 			System.out.println("Your chosen is wrong, good bye!");
