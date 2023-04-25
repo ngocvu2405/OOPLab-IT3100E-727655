@@ -19,4 +19,4 @@
 
 ### Answer sheet of Lab
 
-* Lab 01: 
+* Lab 01: [Link](./Lab_01/answer.txt)
