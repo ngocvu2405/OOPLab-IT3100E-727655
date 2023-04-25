@@ -1,4 +1,4 @@
-1. Write, compile and run the ChoosingOption program
+# 1. Write, compile and run the ChoosingOption program
 
 import javax.swing.JOptionPane;
 public class ChoosingOption {
@@ -14,7 +14,7 @@ public class ChoosingOption {
 
 }
 
-2. Write a program for input/output from keyboard
+# 2. Write a program for input/output from keyboard
 
 import java.util.Scanner;
 public class InputFromKeyboard {
@@ -34,7 +34,7 @@ public class InputFromKeyboard {
 
 }
 
-2.1. Write a program to display a triangle with a height of n stars (*), n is entered by users.
+# 2.1. Write a program to display a triangle with a height of n stars (*), n is entered by users.
 
 import java.util.Scanner;
 import java.text.Format;
@@ -56,7 +56,7 @@ public class TriangleWithHeight {
 	}
 }
 
-3. Write a program to display the number of days of a month, which is entered by users (both month and year). If it is an invalid month/year, ask the user to enter again.
+# 3. Write a program to display the number of days of a month, which is entered by users (both month and year). If it is an invalid month/year, ask the user to enter again.
 
 import java.util.Scanner;
 import java.util.*;
@@ -175,7 +175,7 @@ public class DaysOfMonthYear {
 	}
 }
 
-4. Write a Java program to sort a numeric array, and calculate the sum and average value of array elements.
+# 4. Write a Java program to sort a numeric array, and calculate the sum and average value of array elements.
 
 public class SortingArray {
 
@@ -277,7 +277,8 @@ public class ArrayWithSpecialMethods {
 		//Choosing option
 		System.out.println("Choose option which you want to do with the array? \n"
 				+ "1. Sort the array \n"
-				+ "2. Calculate the average of this array");
+				+ "2. Calculate the average of this array \n"
+				+ "3. Calculate the sum of this array.");
 		int choose = keyboard.nextInt();
 		if (choose == 1) {
 			SortingArray sort = new SortingArray();
@@ -290,6 +291,13 @@ public class ArrayWithSpecialMethods {
 			int res = arr2.averageArray(arr);
 			System.out.println("Average of this array is: " + res);
 		}
+		else if (choose ==3) {
+			int sum = 0;
+			for (int i =0; i < LENGTH; i++) {
+				sum +=arr[i];
+			}
+			System.out.println("The sum is: " + sum);
+		}
 		else {
 			System.out.println("Your chosen is wrong, good bye!");
 		}
@@ -300,7 +308,7 @@ public class ArrayWithSpecialMethods {
 }
 
 
-5. Write a Java program to add two matrices of the same size.
+# 5. Write a Java program to add two matrices of the same size.
 
 import java.util.Scanner;
 
