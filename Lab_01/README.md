@@ -1,6 +1,6 @@
-#This is my homework for Lab 01: Environment Setup and Java Basics
+# This is my homework for Lab 01: Environment Setup and Java Basics
 
-   ###There are 6 exercises in this lab:
+   ### There are 6 exercises in this lab:
     
 	1. Write, compile and run the ChoosingOption program
 	2. Write a program for input/output from keyboard
