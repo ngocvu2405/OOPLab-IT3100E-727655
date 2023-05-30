@@ -12,9 +12,9 @@
 ## This repo is working for submit my homework of OOP Lab - IT3100E, SoICT, HUST.
 ### Table of contents:
 
-* Lab 01: Environment Setup and Java Basics - Link: [Lab 01](./Lab_01)
-* Lab 02: Problem Modeling and Encapsulation - Link: [Lab 02](./Lab_02)
-* Lab 03: ...
+* Lab 01: Environment Setup and Java Basics - Link: [Lab 01](./Other/Lab_01)
+* Lab 02: Problem Modeling and Encapsulation - Link: [Lab 02](./Other/Lab_02) and also in [AIMS PROJECT](./AIMS/AimsProject)
+* Lab 03: Basic Object-Oriented Techniques - Link: [AIMS PROJECT](./AIMS/AimsProject)
 * Lab 04: ...
 
 ### Answer sheet of Lab
