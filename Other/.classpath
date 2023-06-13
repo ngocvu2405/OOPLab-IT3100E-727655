@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="Lab_01/arrayMethods/src/|Lab_01/sum2Matrices/src/|Lab_01/displayDaysOfMonth/src/|Lab_02/AimsProject/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="Lab_01/arrayMethods/src"/>
+	<classpathentry kind="src" path="Lab_01/displayDaysOfMonth/src"/>
+	<classpathentry kind="src" path="Lab_01/sum2Matrices/src"/>
+	<classpathentry kind="src" path="Lab_02/AimsProject/src"/>
+	<classpathentry kind="output" path="Lab_01/arrayMethods/bin"/>
+</classpath>
