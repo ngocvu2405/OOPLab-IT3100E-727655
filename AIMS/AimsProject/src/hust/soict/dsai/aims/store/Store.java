@@ -1,41 +1,42 @@
 package hust.soict.dsai.aims.store;
 import java.util.ArrayList;
+import hust.soict.dsai.aims.media.Media;
 
-import hust.soict.dsai.aims.media.DigitalVideoDisc;
+//import hust.soict.dsai.aims.media.DigitalVideoDisc;
 
 public class Store {
-    private ArrayList<DigitalVideoDisc> itemsInStore = new ArrayList<DigitalVideoDisc>();
+    private ArrayList<Media> itemsInStore = new ArrayList<Media>();
 
-    public void addDVD(DigitalVideoDisc disc) {
-    	if (itemsInStore.contains(disc)) {
-    		System.out.println("This DVD was added previously!");
+    public void addMedia(Media media) {
+    	if (itemsInStore.contains(media)) {
+    		System.out.println("This Media was added previously!");
     	}
     	else {
-    		itemsInStore.add(disc);
-    		System.out.println("DVD " + disc.getTitle() +  " has been added!");
+    		itemsInStore.add(media);
+    		System.out.println("Media: " + media.getTitle() +  " has been added!");
 
     	}
     }
     
-    public void removeDVD(DigitalVideoDisc disc) {
-    	if (itemsInStore.contains(disc)) {
-    		itemsInStore.remove(disc);
-    		System.out.println("DVD " + disc.getTitle() + " has been removed!");
+    public void removeMedia(Media media) {
+    	if (itemsInStore.contains(media)) {
+    		itemsInStore.remove(media);
+    		System.out.println("Media: " + media.getTitle() + " has been removed!");
     	}
     	else {
-    		System.out.println("DVD " + disc.getTitle() +  " is not exist in the Store.");
+    		System.out.println("Media: " + media.getTitle() +  " is not exist in the Store.");
 
     	}
     }
     
-	public ArrayList<DigitalVideoDisc> getItemsInStore() {
+	public ArrayList<Media> getItemsInStore() {
 		return itemsInStore;
 	}
 	
 	
 	public void print() {
 		System.out.println("**********************STORE************************");
-		for (DigitalVideoDisc disc: itemsInStore) {
+		for (Media disc: itemsInStore) {
 			System.out.println(itemsInStore.indexOf(disc)+1 +". " + disc);
 		}
 		System.out.println("***************************************************");

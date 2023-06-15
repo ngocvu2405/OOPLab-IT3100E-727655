@@ -14,14 +14,14 @@ public class StoreTest {
 		DigitalVideoDisc dvd2 = new DigitalVideoDisc("Star Wars", "Science Fiction", "Geogre Lucas", 87, 24.95f);
 		DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
 		
-		testStore.addDVD(dvd1);		
-		testStore.addDVD(dvd2);
-		testStore.addDVD(dvd3);
+		testStore.addMedia(dvd1);		
+		testStore.addMedia(dvd2);
+		testStore.addMedia(dvd3);
 		
 		testStore.print();
 		
 		//Remove DVD by title -- List doesn't have DVD3
-		testStore.removeDVD(dvd3);
+		testStore.removeMedia(dvd3);
 		
 		testStore.print();
 	}
