@@ -1,6 +1,8 @@
 package hust.soict.dsai.aims.media;
 
-public abstract class Media {
+import java.util.Comparator;
+
+public abstract class Media implements Comparable<Media>{
 	
 	private static int nbMedia = 0;
 	protected int id;
@@ -8,6 +10,9 @@ public abstract class Media {
 	protected String category;
 	protected float cost;
 	
+	public static final Comparator<Media> COMPARE_BY_TITLE_COST = new MediaComparatorByTitleCost();
+	public static final Comparator<Media> COMPARE_BY_COST_TITLE = new MediaComparatorByCostTitle();
+
 	
 	public Media() {
 		// TODO Auto-generated constructor stub
@@ -71,5 +76,24 @@ public abstract class Media {
 				+ " - "  + this.category 
 				+ ": " + this.cost + "$";
 	};
+	
+	@Override
+    public int compareTo(Media other) {
+        int titleComparison = this.getTitle().compareTo(other.getTitle());
+        if (titleComparison != 0) {
+            return titleComparison;
+        } else {
+            return Double.compare(this.getCost(), other.getCost());
+        }
+    }
+	
+    public boolean isMatch(String title) {
+        return this.getTitle().toLowerCase().contains(title.toLowerCase());
+    }
+
+    public void play() {
+        System.out.println("Playing media");
+    }
 
 }
+
