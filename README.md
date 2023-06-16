@@ -15,7 +15,7 @@
 * Lab 01: Environment Setup and Java Basics - Link: [Lab 01](./Other/Lab_01)
 * Lab 02: Problem Modeling and Encapsulation - Link: [Lab 02](./Other/Lab_02) and also in [AIMS PROJECT](./AIMS/AimsProject)
 * Lab 03: Basic Object-Oriented Techniques - Link: [AIMS PROJECT + Garbage](https://github.com/ngocvu2405/OOPLab-IT3100E-727655/tree/release/lab03)
-* Lab 04: ...
+* Lab 04: Inheritance and Polymorphism - Link: [Branch: release/lab04]((https://github.com/ngocvu2405/OOPLab-IT3100E-727655/tree/release/lab04)
 
 ### Answer sheet of Lab
 
