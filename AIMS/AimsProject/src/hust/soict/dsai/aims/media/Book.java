@@ -41,4 +41,11 @@ public class Book extends Media{
 		}
 	}
 	
+	@Override
+	public String toString() {
+		return this.getId()+ ". Book: " + this.title 
+				+ " - "  + this.category 
+				+ ": " + this.cost + "$";
+	};
+	
 }

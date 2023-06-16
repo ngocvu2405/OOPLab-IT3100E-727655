@@ -33,6 +33,10 @@ public abstract class Media {
 	public float getCost() {
 		return cost;
 	}
+	
+	public int getId() {
+		return id;
+	}
 
 
 	Media(String title, String category) {
@@ -49,5 +53,23 @@ public abstract class Media {
 		this.cost = cost;
 		this.id = ++nbMedia;
 	}
+	
+	@Override
+	public boolean equals(Object obj){
+		if (this == obj) {
+			return true;
+		}
+		if(!(obj instanceof Track)) {
+			return false;
+		}
+		return ((Track)obj).getTitle() == this.getTitle();
+	}
+	
+	@Override
+	public String toString() {
+		return this.getId() +". Media: " + this.title 
+				+ " - "  + this.category 
+				+ ": " + this.cost + "$";
+	};
 
 }

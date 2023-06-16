@@ -15,8 +15,18 @@ public class Disc extends Media {
 		super(title, category, cost);
 		// TODO Auto-generated constructor stub
 	}
+	public Disc(String title, String category, String director, float cost) {
+		super(title, category, cost);
+		this.director = director;
+		// TODO Auto-generated constructor stub
+	}
 	public Disc(String title, String category) {
 		super(title, category);
+		// TODO Auto-generated constructor stub
+	}
+	public Disc(String title, int length) {
+		super(title);
+		this.length = length;
 		// TODO Auto-generated constructor stub
 	}
 	public Disc(String title) {
